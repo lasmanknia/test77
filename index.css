@@ -1,0 +1,129 @@
+
+/*start*/
+.liafnav{
+    position: fixed;
+    top: 9vh;
+    left: 50%;
+    padding: 4px;
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px);
+}
+.liafnav::after{
+   content: '';
+   background-color: white;
+   width: 100%;
+   margin-top: 3px;
+   height: 1px;
+   position: absolute;
+}
+.liafnav ul { 
+    width: 90vw;
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+  }
+  .liafnav li { 
+    position: relative; 
+  }
+  .liafnav  a {
+   color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .liafnav  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background: var(--color);
+  }
+  .liafnav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+ .instart{
+    justify-content: center;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+    display: flex;
+ }
+ .udnam{
+    width: 70vw;
+    font-size: 0.6rem;
+    text-align: center;
+ }
+ .udnam::first-line{
+   color: white;
+    font-size: 3.5rem;
+ }
+ 
+ .udop{
+    width: 90vw;
+    margin-top: 20px;
+ }
+ .udop ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .udop ul li{
+    margin: 15px;
+    width: 20vw;
+ }
+ .udop a{
+   color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+ }
+.udop ul div{
+    backdrop-filter: blur(5px);
+    text-align: center;
+    padding: 8px;
+    width: 65px;
+    border-radius: 10px;
+    border: solid 1.5px white;
+ }
+ .udop ul div:hover{    
+   border: solid 1.5px black;
+   background-color: black;
+ }
+ .udop ion-icon{
+   color: white;
+    font-size: 2.2rem;
+ }
+
+ 
+
+
+ /*for img slider*/
+
+ .slider-container {
+   width: 95vw;
+   margin: 15px auto;
+   height: 180px;
+   overflow: hidden;
+   border: 2px solid #ccc;
+   border-radius: 10px;
+}
+
+.slider {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+img {
+   width: 100%;
+   height: auto;
+}
+
+
+
+footer{
+
+}
